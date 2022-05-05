@@ -7,7 +7,13 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background-color: rgba( 54, 202, 197, 0.8);
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 3px, transparent 3px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 3px, transparent 60px),
+  linear-gradient(60deg, rgba(139,139,139,.6) 25%, transparent 25%, transparent 75%, rgba(139,139,139,.6) 75%, rgba(139,139,139,.6)),
+  linear-gradient(120deg, rgba(139,139,139,.6) 25%, transparent 25%, transparent 75%, rgba(139,139,139,.6) 75%, rgba(139,139,139,.6));
+  background-size: 70px 120px;
 }
 
 button {
@@ -31,7 +37,11 @@ button {
   margin: 10px;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
+  padding: 15px 120px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+
+ul {
+  list-style: none;
 }
